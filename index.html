@@ -1,116 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page personelle de Souad</title>
-<link rel="stylesheet" href="../css/style.css">
+    <title>Page personelle de Souad</title>
+    <link rel="stylesheet" href="/-tch056-lab-2/styles/style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center;    /* Centers content vertically */
+            min-height: 100vh;      /* Full height of the viewport */
+            margin: 0;              /* Removes default body margin */
+            font-family: Arial, sans-serif; /* Optional: Set a font */
+            background-color: #f4f4f4; /* Optional: Light background */
+        }
+        .content {
+           
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px; /* Optional: Rounded corners */
+            background-color: rgb(244, 241, 213);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Light shadow */
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <a href="https://example.com/" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZBBHzomzT3uMgk9vS_2X5-XOsNQXQe8i5A&s" alt="Photo de profil" style="width:200px;height:auto;">
-        </a>
-        <p>Photo de profil</p>
-    </div>
-    <h1>Souad Goubaa</h1>
-    <p>Etudiante a l'ecole de technologie superieure</p> 
-    <h2>Horaire pour la session Hiver 2025</h2>
-    <table>
-        <thead>
-          <tr>
-            <th colspan="6">Horaire H2024</th>
-          </tr>
-          <tr>
-            <th>-</th>
-            <th>Lundi</th>
-            <th>Mardi</th>
-            <th>Mercredi</th>
-            <th>Jeudi</th>
-            <th>Vendredi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>AM</td>
-            <td>TCH013</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>PM</td>
-            <td>INF155</td>
-            <td>TCH017</td>
-            <td>TCH013</td>
-            <td>INF155</td>
-            <td>TCH017</td>
-          </tr>
-          <tr>
-            <td>Soir</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <caption>
-            Legende: 
+    <div class="content">
+        <div>
+            <a href="https://example.com/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZBBHzomzT3uMgk9vS_2X5-XOsNQXQe8i5A&s" alt="Photo de profil" style="width:200px;height:auto;">
+            </a>
+            <p>Photo de profil</p>
+        </div>
+        <h1>Souad Goubaa</h1>
+        <p>Etudiante a l'ecole de technologie superieure</p>
+        <h2>Horaire pour la session Hiver 2025</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">Horaire H2024</th>
+                </tr>
+                <tr>
+                    <th>-</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AM</td>
+                    <td>TCH013</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>PM</td>
+                    <td>INF155</td>
+                    <td>TCH017</td>
+                    <td>TCH013</td>
+                    <td>INF155</td>
+                    <td>TCH017</td>
+                </tr>
+                <tr>
+                    <td>Soir</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <caption>
+            Legende:
             <br>
             TCH013: Automates programmables et logique sequentielle
             <br>
             TCH017: Architecture des ordinateurs
             <br>
             INF155: Introduction a la programmation
-      </caption>
-      <br>
-    <h2>Contact</h2>
-    <p>1. <em><strong> Courriel :</strong> </em><a href="souad.goubaa.1@ens.etsmtl.ca">souad.goubaa.1@ens.etsmtl.ca</a></p>
-    <p>2.  <em><strong> Github: </strong> </em> <a href= "https://github.com/Souadgb" target="_blank">https://github.com/Souadgb</a></p>
-<hr> 
-<h3>Ecrivez moi</h3>
-<label for="Prenom">1. Prenom <br></label>
-<input type="text" id="Prenom" name="Prenom" required>
-<button type="submit">Soumettre</button>
-<button type="reset">Effacer</button>
-<br>
-<label for="Nom">2. Nom <br></label>
-<input type="text" id="nom" name="nom" required>
-<button type="submit">Soumettre</button>
-<button type="reset">Effacer</button>
-<br>
-<label for="Message">3. Message <br></label>
-<textarea id="Message" name="Message" rows="10" cols="40"></textarea>
-<button type="submit">Soumettre</button>
-<button type="reset">Effacer</button>
-<br>
-    <table>
-        <thead>
-          <tr>
-            <th>Sigle</th>
-            <th>Titre</th>
-            <th>Lien</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>TCH017</td>
-            <td>Architecture des ordinateurs</td>
-            <td> <a href="https://www.etsmtl.ca/etudes/cours/tch017" target="_self"> cliquez ici</a></td>
-          </tr>
-          <tr>
-            <td>TCH056</td>
-            <td>Programmation web</td>
-            <td> <a href="https://www.etsmtl.ca/etudes/cours/tch056" target="_self"> cliquez ici</a></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      
-       <!-- Ligne cliquable "Retour en haut" -->
-    <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="scroll-to-top">Retour en haut</a>
-<br>
+        </caption>
+        <br>
+        <h2>Contact</h2>
+        <p>1. <em><strong>Courriel:</strong></em> <a href="souad.goubaa.1@ens.etsmtl.ca">souad.goubaa.1@ens.etsmtl.ca</a></p>
+        <p>2. <em><strong>Github:</strong></em> <a href="https://github.com/Souadgb" target="_blank">https://github.com/Souadgb</a></p>
+        <hr>
+        <h3>Ecrivez moi</h3>
+        <label for="Prenom">1. Prenom <br></label>
+        <input type="text" id="Prenom" name="Prenom" required>
+        <button type="submit">Soumettre</button>
+        <button type="reset">Effacer</button>
+        <br>
+        <label for="Nom">2. Nom <br></label>
+        <input type="text" id="Nom" name="Nom" required>
+        <button type="submit">Soumettre</button>
+        <button type="reset">Effacer</button>
+        <br>
+        <label for="Message">3. Message <br></label>
+        <textarea id="Message" name="Message" rows="10" cols="40"></textarea>
+        <button type="submit">Soumettre</button>
+        <button type="reset">Effacer</button>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sigle</th>
+                    <th>Titre</th>
+                    <th>Lien</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TCH017</td>
+                    <td>Architecture des ordinateurs</td>
+                    <td><a href="https://www.etsmtl.ca/etudes/cours/tch017" target="_self">cliquez ici</a></td>
+                </tr>
+                <tr>
+                    <td>TCH056</td>
+                    <td>Programmation web</td>
+                    <td><a href="https://www.etsmtl.ca/etudes/cours/tch056" target="_self">cliquez ici</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- Ligne cliquable "Retour en haut" -->
+        <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="scroll-to-top">Retour en haut</a>
+        <br>
+    </div>
 </body>
-<br>
 </html>
